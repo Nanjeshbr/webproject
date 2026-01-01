@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback | ElectroVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Feedback</h1>
+  <a href="index.html">← Back to Home</a>
+</nav>
+
+<div class="feedback-box">
+  <h2>We value your feedback 💬</h2>
+
+  <input type="text" id="fname" placeholder="Your Name" required>
+  <input type="email" id="femail" placeholder="Your Email" required>
+
+  <label>Rating</label>
+  <select id="rating">
+    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+    <option value="4">⭐⭐⭐⭐ Very Good</option>
+    <option value="3">⭐⭐⭐ Good</option>
+    <option value="2">⭐⭐ Fair</option>
+    <option value="1">⭐ Poor</option>
+  </select>
+
+  <textarea id="fmsg" placeholder="Your feedback..." rows="4"></textarea>
+
+  <button onclick="submitFeedback()">Submit Feedback</button>
+
+  <p id="feedbackMsg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
