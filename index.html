@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ElectroVerse | Store</title>
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>ElectroVerse</h1>
+  <nav class="nav" id="mainNav">
+    <a onclick="showPage('shop')">Home</a>
+    <a onclick="showPage('cart')">Cart 🛒</a>
+    <a onclick="showPage('feedback')">Feedback 💬</a>
+    <span id="userGreeting"></span>
+  </nav>
+</header>
+
+<main>
+
+  <!-- LOGIN PAGE -->
+  <section id="loginPage" class="page active">
+    <h2>Member Login</h2>
+    <input type="text" id="loginUsername" placeholder="Username" />
+    <input type="password" id="loginPassword" placeholder="Password" />
+    <button id="loginBtn" onclick="login()">Login</button>
+  </section>
+
+
+  <!-- SHOP PAGE -->
+  <section id="shop" class="page">
+
+    <div class="about-us">
+      <strong>About Us:</strong> ElectroVerse is your trusted online electronics store offering premium gadgets from top global brands.
+    </div>
+
+    <div class="brands">
+      <img src="https://cdn.worldvectorlogo.com/logos/apple-13.svg">
+      <img src="https://cdn.worldvectorlogo.com/logos/samsung-2.svg">
+      <img src="https://cdn.worldvectorlogo.com/logos/hp-2.svg">
+      <img src="https://cdn.worldvectorlogo.com/logos/dell-2.svg">
+      <img src="https://cdn.worldvectorlogo.com/logos/lenovo-2.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/ASUS_Logo.svg">
+      <img src="https://cdn.worldvectorlogo.com/logos/logitech.svg">
+    </div>
+
+    <h2 class="title">🔥 Trending Electronics</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="images/laptop.jpg">
+        <h3>Gaming Laptop</h3>
+        <div class="price">₹75,000</div>
+        <button onclick="addToCart('Gaming Laptop',75000)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="images/phone.jpg">
+        <h3>5G Smartphone</h3>
+        <div class="price">₹28,000</div>
+        <button onclick="addToCart('Smartphone',28000)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="images/phone2.jpg">
+        <h3>Smartphone Pro</h3>
+        <div class="price">₹32,000</div>
+        <button onclick="addToCart('Smartphone Pro',32000)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="images/headset.jpg">
+        <h3>Gaming Headset</h3>
+        <div class="price">₹3,200</div>
+        <button onclick="addToCart('Gaming Headset',3200)">Add to Cart</button>
+      </div>
+       <div class="card">
+        <img src="images/motherboard.jpg">
+        <h3>Asus motherboard</h3>
+        <div class="price">₹9,200</div>
+        <button onclick="addToCart('Asus motherboard',9200)">Add to Cart</button>
+      </div>
+       <div class="card">
+        <img src="images/Asus Keyboard.jpg">
+        <h3>Asus rog Keyboard </h3>
+        <div class="price">₹3,200</div>
+        <button onclick="addToCart('Asus rog Keyboard',3000)">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/tv.jpg">
+        <h3>4K Smart TV</h3>
+        <div class="price">₹42,000</div>
+        <button onclick="addToCart('Smart TV',42000)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CART -->
+  <section id="cart" class="page">
+    <h2>Your Cart 🛒</h2>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+    <button onclick="checkout()" id="checkoutBtn">Checkout</button>
+  </section>
+
+    <!-- FEEDBACK PAGE -->
+  <section id="feedback" class="page">
+    <h2>We value your feedback</h2>
+    <form id="feedbackForm" onsubmit="submitFeedback(event)">
+      <label>
+        Name*:<br />
+        <input type="text" id="fname" required />
+      </label>
+      <br />
+      <label>
+        Email*:<br />
+        <input type="email" id="femail" required />
+      </label>
+      <br />
+      <label>
+        Rating:<br />
+        <select id="rating">
+          <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+          <option value="4">⭐⭐⭐⭐ Very Good</option>
+          <option value="3">⭐⭐⭐ Good</option>
+          <option value="2">⭐⭐ Fair</option>
+          <option value="1">⭐ Poor</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        Feedback:<br />
+        <textarea id="fmsg" rows="4" placeholder="Your feedback..."></textarea>
+      </label>
+      <br />
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <p id="feedbackMsg" style="margin-top:20px; font-weight:bold;"></p>
+  </section>
+
+</main>
+
+<footer>© 2025 ElectroVerse</footer>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+</body>
+</html>
+
+
