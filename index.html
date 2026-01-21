@@ -4,7 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ElectroVerse | Store</title>
-
+  <style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0 20px 40px 20px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  </style>
   <!-- CSS LINK -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -37,8 +47,33 @@
 
     <div class="about-us">
       <strong>About Us:</strong> ElectroVerse is your trusted online electronics store offering premium gadgets from top global brands.
-    </div>
+    </div><style>
+      .about-us {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    background: rgba(255,255,255,0.1);
+    padding: 20px 25px;
+    border-radius: 200px;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #ff00cd;
+  }
+  </style>
+  <style>
+      .brands{
+        background-color:purple;
+        padding:20px;
+        border-radius:200px;
+      }
 
+ 
+    .card{
+      background-color:black;
+      padding:20px;
+      border-radius:200px;
+    }
+       </style>
     <div class="brands">
       <img src="https://cdn.worldvectorlogo.com/logos/apple-13.svg">
       <img src="https://cdn.worldvectorlogo.com/logos/samsung-2.svg">
@@ -48,10 +83,19 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/ASUS_Logo.svg">
       <img src="https://cdn.worldvectorlogo.com/logos/logitech.svg">
     </div>
-
+    <div class="box">
+      <ul>
+        <p style="color:blue;">
+      Happy chrismas 
+        </p>
+    <li>New offers are available</li>
+    <li>Free Delivery on above 1000</li>
+      </ul>
+    </div>
     <h2 class="title">🔥 Trending Electronics</h2>
 
-    <div class="products">
+    <div class="products
+    ">
 
       <div class="card">
         <img src="images/laptop.jpg">
@@ -66,7 +110,6 @@
         <div class="price">₹28,000</div>
         <button onclick="addToCart('Smartphone',28000)">Add to Cart</button>
       </div>
-
       <div class="card">
         <img src="images/phone2.jpg">
         <h3>Smartphone Pro</h3>
@@ -153,5 +196,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
