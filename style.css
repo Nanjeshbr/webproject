@@ -221,5 +221,45 @@
     color:red;
     
   }
+/* Contact Page */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.12);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #00eaff;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: #00eaff;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #00ffa2;
+}
+
+
 
 
