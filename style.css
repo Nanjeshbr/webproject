@@ -1,12 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0; padding: 0 20px 40px 20px;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+
   header.header {
     display: flex;
     justify-content: space-between;
@@ -44,16 +36,18 @@ body {
     font-size: 2em;
     margin-bottom: 25px;
   }
-  .about-us {
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    background: rgba(255,255,255,0.1);
-    padding: 20px 25px;
-    border-radius: 15px;
-    text-align: center;
+  
+  #loginBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00eaff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
     font-size: 1.1em;
-    line-height: 1.5;
-    color: #00ffa2;
+    transition: background-color 0.3s ease;
   }
   .brands {
   max-width: 900px;
@@ -83,7 +77,18 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-
+#loginBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00eaff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
 
   .brands img:hover {
     filter: brightness(1.5);
@@ -181,18 +186,7 @@ body {
     font-size: 1em;
   }
   form button[type="submit"],
-  #loginBtn {
-    width: 100%;
-    padding: 12px;
-    background-color: #00eaff;
-    border: none;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #000;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-  }
+  
   form button[type="submit"]:hover,
   #loginBtn:hover {
     background-color: #00ffa2;
@@ -220,4 +214,12 @@ body {
   #loginPage input {
     margin-bottom: 15px;
   }
+  .box{
+    background-color:green;
+    padding:25px;
+    border-radius:100px;
+    color:red;
+    
+  }
+
 
